@@ -12,7 +12,9 @@ import java.util.Date;
  *
  */
 public class StudentGroup implements StudentArrayOperation {
-
+    
+try
+{
 	private Student[] students;
 	
 	/**
@@ -240,6 +242,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
                 if(student == null)
                     throw IllegalArgumentException;
+                
                 else
                 {
                 for(int i=0; i<size; i++)
@@ -252,4 +255,10 @@ public class StudentGroup implements StudentArrayOperation {
 		return null;
 	}
                 }
+        }
+}
+        catch(IllegalArgumentException e)
+        {
+            System.out.println("exception");
+        }
 }
